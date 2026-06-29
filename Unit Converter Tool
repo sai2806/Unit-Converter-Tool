@@ -1,0 +1,24 @@
+print("Unit Converter")
+print("1. Kilometers to Miles")
+print("2. Celsius to Fahrenheit")
+print("3. Kilograms to Pounds")
+
+choice = int(input("Enter your choice: "))
+
+if choice == 1:
+    km = float(input("Enter kilometers: "))
+    miles = km * 0.621371
+    print("Miles:", miles)
+
+elif choice == 2:
+    c = float(input("Enter Celsius: "))
+    f = (c * 9/5) + 32
+    print("Fahrenheit:", f)
+
+elif choice == 3:
+    kg = float(input("Enter kilograms: "))
+    pounds = kg * 2.20462
+    print("Pounds:", pounds)
+
+else:
+    print("Invalid choice")
